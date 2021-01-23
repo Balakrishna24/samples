@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+    <title>samples1</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+    <style>
+    .w3-card-4
+        {
+            float:left;
+            margin: 20px;
+            width:500px;
+            height: 500px;
+            padding: 50px;
+        }
+        .bg-img {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+       
+    </style>
+    
+<body>
+    <!--navbar----->
+    
+    <div class="container-fluid">
+   <nav class="navbar navbar-inverse">
+  
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" class="btn btn-primary" data-toggle="collapse" data-target="#cart">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+          </button>
+      <a class="navbar-brand" href="https://sixthcircleinc.com/?page_id=8">WebSite</a>
+    </div>
+       <div id="cart" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sample 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Sample 1-1</a></li>
+          <li><a href="#">Sample 1-2</a></li>
+          <li><a href="#">Sample 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Sample 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div> 
+
+</nav>
+    </div>  
+       
+     
+<script>
+       $(document).ready(function(){
+
+  const imgOne = 'https://preview.ibb.co/b43uR8/img01.jpg';
+  const imgTwo = 'https://preview.ibb.co/ioNAzT/img02.jpg';
+  const imgThree = 'https://preview.ibb.co/c9xtKT/img03.jpg';
+
+  const imgArray = [imgOne, imgTwo, imgThree];
+  
+  $('.bg-img').css('background-image', 'url(' + imgArray[0] + ')');
+  
+  let interval = 0;
+  
+  setInterval(function(){
+    
+    if (interval < (imgArray.length - 1)) {
+    	interval++;
+    } else {
+    	interval = 0;
+    }
+    
+    $('.bg-img').css('background-image', 'url(' + imgArray[interval] + ')');
+  
+  }, 4000);
+  
+}); 
+    </script>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+<div class="bg-img">
+       
+      <div class="w3-container">
+  <h2>Card Example</h2>
+
+  <div class="w3-card-4 w3-dark-grey" style="width:30%">
+
+    <div class="w3-container w3-center">
+      <h3>Student Request</h3>
+      <img src="https://cdn.business2community.com/wp-content/uploads/2020/02/personal-brand.png" alt="Avatar" style="width:50px height=100px">
+      <h4>Balakrishna</h4>
+
+      <div class="w3-section">
+        <button class="w3-button w3-green">Accept</button>
+        <button class="w3-button w3-red">Decline</button>
+      </div>
+    </div>
+
+  </div>
+           <div class="w3-card-4 w3-dark-grey">
+            <h2 >ABOUT INFO</h2><hr/>
+                <h4>Full Name: <span> Balakrishna</span></h4>
+                   <h4>Birthday: <span> 24 augest 1996</span></h4>
+                <h4>Job:<span>  freelancer  </span></h4>
+                  <h4>Wedsite:<span>  www.balu.com </span></h4>
+                  <h4>Email:<span>   balakrishnabharat140@gmail.com</span></h4>
+                <h4>Phone:<span>   8904701008</span></h4>
+                <h4>slope:<span>  bala123</span></h4>
+                
+            </div>
+</div>
+    </div>
+   
+<footer class="bg-light text-center text-lg-start">
+  
+  <div class="container-fluid">
+   
+    <div class="row">
+    
+      <div class="col-sm-6"style="background-color: darkgray;">
+        <h5 class="text-uppercase">pages</h5>
+
+        <ul class="list" style="text-decoration: none">                                           
+														<li><a href="index.html">Home</a></li>
+														<li><a href="about.html">About Us</a></li>
+														<li><a href="services.html">Services</a></li>
+														<li><a href="knowledge_hub.html">Knowledge Hub</a></li>
+														<li><a href="contact.html">Contact</a></li>
+													</ul>
+      </div>
+      
+        
+      <div class="col-sm-6" style="background-color: darkgray">
+          <h5 class="text-uppercase">pages</h5>
+
+        <ul class="list" style="text-decoration-skip: :none">                                           
+														<li><a href="index.html">Home</a></li>
+														<li><a href="about.html">About Us</a></li>
+														<li><a href="services.html">Services</a></li>
+														<li><a href="knowledge_hub.html">Knowledge Hub</a></li>
+														<li><a href="contact.html">Contact</a></li>
+													</ul>
+      </div>
+     
+    </div>
+   
+  </div>
+ 
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: lightblue;height:20px">
+    © 2020 Copyright:
+    <a class="text-dark" href="#">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+    
+  
+      
+    </body>    
+
+</html>
